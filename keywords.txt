@@ -1,0 +1,66 @@
+#######################################
+# Syntax Coloring Map For SSD1306
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SSD1306 KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+command KEYWORD2
+display KEYWORD2
+invertDisplay   KEYWORD2
+clearDisplay    KEYWORD2
+setBrightness   KEYWORD2
+runTOF  KEYWORD2
+getState    KEYWORD2
+autoBrightness  KEYWORD2
+init    KEYWORD2
+setRotation KEYWORD2
+swap    KEYWORD2
+drawPixel   KEYWORD2
+drawBitmap  KEYWORD2
+writeLine   KEYWORD2
+drawLineV   KEYWORD2
+drawLineH   KEYWORD2
+drawLine    KEYWORD2
+drawRect    KEYWORD2
+fillRect    KEYWORD2
+drawCircle  KEYWORD2
+fillCircle  KEYWORD2
+drawTriangle    KEYWORD2
+fillTriangle    KEYWORD2
+drawRhombus KEYWORD2
+fillRhombus KEYWORD2
+drawText    KEYWORD2
+onscreenMode    KEYWORD2
+println KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+SSD1306_I2C_ADDRESS LITERAL1
+SSD1306_DISPLAYOFF  LITERAL1
+SSD1306_SETDISPLAYCLOCKDIV  LITERAL1
+SSD1306_SETMULTIPLEX    LITERAL1
+SSD1306_SETDISPLAYOFFSET    LITERAL1
+SSD1306_SETSTARTLINE    LITERAL1
+SSD1306_CHARGEPUMP  LITERAL1
+SSD1306_MEMORYMODE  LITERAL1
+SSD1306_SEGREMAP    LITERAL1
+SSD1306_COMSCANDEC  LITERAL1
+SSD1306_SETCOMPINS  LITERAL1
+SSD1306_SETCONTRAST LITERAL1
+SSD1306_SETPRECHARGE    LITERAL1
+SSD1306_SETVCOMDETECT   LITERAL1
+SSD1306_DISPLAYALLON_RESUME LITERAL1
+SSD1306_NORMALDISPLAY   LITERAL1
+SSD1306_DISPLAYON   LITERAL1
+WIDTH   LITERAL1
+HEIGHT  LITERAL1
