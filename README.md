@@ -9,7 +9,7 @@ This library provides essential functions for controlling the SSD1306 OLED displ
 - Bitmap rendering
 - Auto brightness control
 - Text rendering
-- Mode display
+- Mode display 
 
 https://github.com/user-attachments/assets/e721402f-077d-4e9c-9aa1-3bb0ddc6949a
 
@@ -126,20 +126,3 @@ To contribute to this repository, please follow these steps:
 
 **v1.0.0**
 - Initial release with all core functionalities.
-
-### Documentation
-
-Detailed documentation for each function can be found in the `docs` directory. Please refer to the documentation to understand how to use each function effectively.
-
-### Tests
-
-Unit tests for the library can be found in the `tests` directory. To run the tests, use the following command:
-```bash
-make test
-```
-
-### GitHub Actions
-
-This repository uses GitHub Actions for continuous integration. The workflow file is located in the `.github/workflows` directory and includes steps for building and testing the library automatically on each push and pull request.
-
-Feel free to contribute and suggest improvements!
