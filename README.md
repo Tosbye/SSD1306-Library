@@ -126,3 +126,6 @@ To contribute to this repository, please follow these steps:
 
 **v1.0.0**
 - Initial release with all core functionalities.
+
+**v1.0.1**
+- Added "Simple" example.
