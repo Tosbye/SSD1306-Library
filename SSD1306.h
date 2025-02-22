@@ -683,14 +683,26 @@ class SSD1306 {
       display();
     }
 
-    /*Wenn Eingabewert Ganzzahl dann in String umwandeln*/
-    void println(int32_t number, int8_t mode) {
+    /*Wenn Eingabewert Ganzzahl 32Bit dann in String umwandeln*/
+    void println(int32_t number, int8_t mode = -1) {
+      String text = String(number);
+      println(text, mode);
+    }
+
+    /*Wenn Eingabewert Ganzzahl 16Bit dann in String umwandeln*/
+    void println(int16_t number, int8_t mode = -1) {
+      String text = String(number);
+      println(text, mode);
+    }
+
+    /*Wenn Eingabewert Ganzzahl 8Bit dann in String umwandeln*/
+    void println(int8_t number, int8_t mode = -1) {
       String text = String(number);
       println(text, mode);
     }
 
     /*Wenn Eingabewert Gleitkomma dann in String umwandeln*/
-    void println(double number, int8_t mode) {
+    void println(double number, int8_t mode = -1) {
       String text = String(number, 2);
       println(text, mode);
     }
