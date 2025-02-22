@@ -109,3 +109,37 @@ Authors:
 - Suly
 
 For more information, please refer to <http://unlicense.org/>
+
+## Additional Information
+
+### Contribution Guidelines
+
+To contribute to this repository, please follow these steps:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature-branch`)
+6. Open a Pull Request
+
+### Changelog
+
+**v1.0.0**
+- Initial release with all core functionalities.
+
+### Documentation
+
+Detailed documentation for each function can be found in the `docs` directory. Please refer to the documentation to understand how to use each function effectively.
+
+### Tests
+
+Unit tests for the library can be found in the `tests` directory. To run the tests, use the following command:
+```bash
+make test
+```
+
+### GitHub Actions
+
+This repository uses GitHub Actions for continuous integration. The workflow file is located in the `.github/workflows` directory and includes steps for building and testing the library automatically on each push and pull request.
+
+Feel free to contribute and suggest improvements!
