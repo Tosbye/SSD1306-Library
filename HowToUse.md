@@ -177,12 +177,12 @@ display.println("Hello, World!", 1); // text: Text to display, mode: Mode value 
 
 To print integer numbers with mode, use the `println(int32_t number, int8_t mode)` method:
 ```cpp
-display.println(12345, 1); // number: Number to display, mode: Mode value
+display.println(12345); // number: Number to display, Mode value (optional)
 ```
 
 To print floating-point numbers with mode, use the `println(double number, int8_t mode)` method:
 ```cpp
-display.println(12.34, 1); // number: Number to display, mode: Mode value
+display.println(12.34); // number: Number to display, Mode value (optional)
 ```
 
 To print text with a bitmap on the screen, use the `println(String text, const uint8_t bitmap[])` method:
