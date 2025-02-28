@@ -26,6 +26,8 @@ https://github.com/user-attachments/assets/e721402f-077d-4e9c-9aa1-3bb0ddc6949a
 
 ## Usage
 
+For detailed usage instructions, please refer to the [Usage Guide](HowToUse.md)
+
 ### Initialization
 
 Initialize the display:
