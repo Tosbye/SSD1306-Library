@@ -130,6 +130,6 @@ To contribute to this repository, please follow these steps:
 **v1.0.1**
 - Added "Simple" example.
 
-- **v1.0.2**
+**v1.0.2**
 - Added scroll functionality.
 - Added "Scroll" example.
