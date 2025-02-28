@@ -126,12 +126,4 @@ To contribute to this repository, please follow these steps:
 
 ### Changelog
 
-**v1.0.0**
-- Initial release with all core functionalities.
-
-**v1.0.1**
-- Added "Simple" example.
-
-**v1.1.0**
-- Added scroll functionality.
-- Added "Scroll" example.
+For detailed change informations, please refer to the [Changelog](CHANGELOG.md)
