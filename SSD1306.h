@@ -161,7 +161,7 @@ class SSD1306 {
        _______________________________________________
       |Helligkeit aendern                             |
       |_______________________________________________|*/
-      /*Manuell*/
+    /*Manuell*/
     void setBrightness(uint8_t brightness) {
       command(SSD1306_SETCONTRAST);
       command(brightness);
@@ -739,5 +739,69 @@ class SSD1306 {
       setRotation(3);
       drawBitmap(0 , Offset, bitmap, 31, 31, 1);
       display();
+    }
+    /************************************************
+       _______________________________________________
+      |Scrollfunktionen                               |
+      |_______________________________________________|*/
+    /*Inhalt rechts scrollen*/
+    void startScrollRight(uint8_t start, uint8_t stop) {
+      command(0x26); // Right Horizontal Scroll
+      command(0x00); // Dummy byte
+      command(start); // Start Page
+      command(0x00); // Scroll speed (0x00 - slow, 0x07 - fast)
+      command(stop); // End Page
+      command(0x00); // Dummy byte
+      command(0xFF); // Dummy byte
+      command(0x2F); // Activate Scroll
+    }
+    /*Inhalt links scrollen*/
+    void startScrollLeft(uint8_t start, uint8_t stop) {
+      command(0x27); // Left Horizontal Scroll
+      command(0x00); // Dummy byte
+      command(start); // Start Page
+      command(0x00); // Scroll speed (0x00 - slow, 0x07 - fast)
+      command(stop); // End Page
+      command(0x00); // Dummy byte
+      command(0xFF); // Dummy byte
+      command(0x2F); // Activate Scroll
+    }
+    /*scrollen beenden*/
+    void stopScroll() {
+      command(0x2E); // Deactivate Scroll
+    }
+    /*Inhalt nach oben scrollen*/
+    void startScrollVerticalRight(uint8_t start, uint8_t stop, uint8_t offset) {
+      command(0xA3); // Set Vertical Scroll Area
+      command(0x00); // Top fixed area
+      command(HEIGHT); // Scroll area (HEIGHT)
+
+      command(0x29); // Vertical and Right Horizontal Scroll
+      command(0x00); // Dummy byte
+      command(start); // Start Page
+      command(0x00); // Scroll speed (0x00 - slow, 0x07 - fast)
+      command(stop); // End Page
+      command(offset); // Vertical scroll offset
+      command(0x2F); // Activate Scroll
+    }
+    /*Inhalt nach unten scrollen*/
+    void startScrollVerticalLeft(uint8_t start, uint8_t stop, uint8_t offset) {
+      command(0xA3); // Set Vertical Scroll Area
+      command(0x00); // Top fixed area
+      command(HEIGHT); // Scroll area (HEIGHT)
+
+      command(0x2A); // Vertical and Left Horizontal Scroll
+      command(0x00); // Dummy byte
+      command(start); // Start Page
+      command(0x00); // Scroll speed (0x00 - slow, 0x07 - fast)
+      command(stop); // End Page
+      command(offset); // Vertical scroll offset
+      command(0x2F); // Activate Scroll
+    }
+    /*Scrollbereich festlegen*/
+    void setVerticalScrollArea(uint8_t top, uint8_t rows) {
+      command(0xA3); // Set Vertical Scroll Area
+      command(top); // Top fixed area
+      command(rows); // Scroll area
     }
 };
