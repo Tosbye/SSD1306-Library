@@ -6,12 +6,16 @@ Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
-## [1.0.1] - 2025-02-22
+## [1.1.0] - YYYY-MM-DD
+### Hinzugefügt
+- Scroll-Funktionen für horizontales und vertikales Scrollen hinzugefügt
+- Beispielcode für die Scroll-Funktionen hinzugefügt
+
 ### Geändert
 - Beispielcode in der README.md erweitert
 - Einfache Textanzeige mit Invertierung hinzugefügt
 
-## [1.0.0] - 2025-02-22
+## [1.0.0] - YYYY-MM-DD
 ### Hinzugefügt
 - Initiale Veröffentlichung der SSD1306-Bibliothek
 - Unterstützung für das Zeichnen von Formen: Linien, Rechtecke, Kreise, Dreiecke und Rauten (sowohl gefüllt als auch ungefüllt)
