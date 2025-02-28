@@ -1,6 +1,6 @@
-# SSD1306 Library
+# SSD1306 Arduino Library
 
-This library provides essential functions for controlling the SSD1306 OLED display. It includes methods for drawing various shapes, manipulating pixels, and rendering bitmaps, making it easy to integrate and use in a wide range of projects.
+The **SSD1306 Arduino Library** provides essential functions for controlling the SSD1306 OLED display. This library includes methods for drawing various shapes, manipulating pixels, rendering bitmaps, and displaying text, making it easy to integrate and use in a wide range of Arduino 
 
 ## Features
 
