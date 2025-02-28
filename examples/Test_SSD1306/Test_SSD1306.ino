@@ -45,7 +45,7 @@ const uint8_t smiley_bitmap[] = {
 /*Initialisierung*/
 void setup() {
   delay(2000);
-  Wire.begin(1, 3);
+  Wire.begin(); //Wire.begin(1, 3);
   Wire.setClock(1000000);
   OLED.init();
 
