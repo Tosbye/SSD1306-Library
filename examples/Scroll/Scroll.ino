@@ -4,7 +4,7 @@
 SSD1306 display;
 
 void setup() {
-  Wire.begin(1, 3);
+  Wire.begin(); //Wire.begin(1, 3);
   Wire.setClock(1000000);
   display.init();
 
